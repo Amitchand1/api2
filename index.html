@@ -1,0 +1,29 @@
+
+<script>
+	function userInput()
+	{
+	var a=document.getElementById("one").value*1;
+	var b=parseInt(document.getElementById("two").value);
+	var c=document.getElementById("check").value;
+	if (c=="ADD"){ var total=a+b;}
+	if (c=="SUBTRACT"){var total=a-b;}
+	if (c=="MULTIPLY"){var total=a*b;}
+	alert(total);
+	}
+</script>
+
+<form>
+<p>Enter number A <input type="text" id="one" /></p>
+<p>Enter number B <input type="text" id="two" /></p>
+<p>
+<select id="check">
+<option>ADD</option>
+<option>SUBTRACT</option>
+<option>MULTIPLY</option>
+</select>
+</p>
+<p><button onclick="userInput()">CLICK</button></p>
+
+
+</form>
+
